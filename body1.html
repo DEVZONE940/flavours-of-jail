@@ -1,0 +1,81 @@
+<div class="bar" id="bar"></div>
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <div class="brand">Flavours Of Jail</div>
+    <div style="display:flex;align-items:center;gap:22px">
+      <a class="navlink" href="#place">The place</a>
+      <a class="navlink" href="#menu">Menu</a>
+      <a class="navlink" href="#order">Order</a>
+      <a class="navlink" href="#book">Book a table</a>
+      <a class="navlink" href="#party">Lockups</a>
+      <a class="btn btn-dark" id="waTop" href="#">WHATSAPP</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="wrap hero-inner">
+    <div class="pill reveal">4.7 from 7,464 Google reviews · AB Road, Indore</div>
+    <h1 class="reveal">A cafe built like<br>a cell block, run by<br>people who like feeding crowds.</h1>
+    <p class="lede reveal">Themed seating, chocolate and coffee, and a menu that leans fast food and pizza. Eat in cell, book a lockup for a birthday, or order to your table.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:26px" class="reveal">
+      <a class="btn btn-dark" href="#order">ORDER FOOD</a>
+      <a class="btn btn-line" href="#book">BOOK A TABLE</a>
+    </div>
+    <div class="scroll reveal">SCROLL</div>
+  </div>
+</header>
+
+<section id="place">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="eyebrow">The place</div>
+      <h2>A jail theme people drive across the city for.</h2>
+    </div>
+    <div class="reveal">
+      <p>Seven thousand four hundred reviews at 4.7 is not a gimmick that got old. The seating is built around the theme, the crowd is young and loud, and it runs late enough that the last table is not a rushed one.</p>
+      <p>Chocolate cafe, coffee shop and pizza takeout under one roof, on AB Road near Holkar College. Every fact on this page comes from the public Google listing. The menu and the timings are the cafe's to confirm.</p>
+      <div class="stats">
+        <div><span data-count="7464">7,464</span><small>Google reviews</small></div>
+        <div><span data-count="4.7" data-dec="1">4.7</span><small>Rating</small></div>
+        <div><span>Till 12</span><small>AM, most nights</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="background:var(--card)">
+  <div class="wrap">
+    <div class="eyebrow reveal">Menu</div>
+    <h2 class="reveal">What is on the menu</h2>
+    <p class="reveal" style="max-width:64ch;color:var(--ink-soft);margin-top:12px">The full menu is not reproduced here, because the kitchen changes it and prices are theirs to set. Send the list over and it goes in, category by category, with prices.</p>
+    <div class="cards">
+      <div class="card reveal"><h3>Chocolate and coffee</h3><p>The listing runs it as a chocolate cafe and coffee shop, so this is the part of the menu that gets photographed most.</p></div>
+      <div class="card reveal"><h3>Pizza and fast food</h3><p>Pizza takeout is listed. Ask what is running today rather than trusting an old photo.</p></div>
+      <div class="card reveal"><h3>Groups and sharing</h3><p>Tables here are built for groups. Send the head count and the manager will say what fits.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="eyebrow">Order</div>
+      <h2>Order to your table, or send it ahead.</h2>
+      <p style="color:var(--ink-soft);margin-top:16px">Write what you want, add a phone number, and it opens as a WhatsApp message to the cafe. They confirm price and timing before anything is made.</p>
+    </div>
+    <form class="panel reveal" id="orderForm" style="padding:26px;border:1px solid var(--line);border-radius:18px;background:var(--card)">
+      <div class="field"><label for="oItems">What you want</label>
+        <textarea id="oItems" rows="3" placeholder="2 chocolate shakes, 1 farmhouse pizza, 1 garlic bread"></textarea></div>
+      <div class="row">
+        <div class="field"><label for="oType">Type</label>
+          <select id="oType"><option>Dine-in</option><option>Takeaway</option><option>Delivery nearby</option></select></div>
+        <div class="field"><label for="oName">Your name</label><input id="oName" placeholder="Name"></div>
+      </div>
+      <div class="field"><label for="oPhone">Phone</label><input id="oPhone" inputmode="tel" placeholder="10-digit number"></div>
+      <button class="btn btn-dark" type="submit" style="width:100%">SEND ORDER ON WHATSAPP</button>
+      <p style="font-size:.78rem;color:var(--ink-soft);margin-top:12px">No payment is taken here. The cafe quotes and confirms.</p>
+    </form>
+  </div>
+</section>
